@@ -14,3 +14,7 @@ form div {
 label {
 	font-family: 'Roboto', sans-serif;
 }
+
+img {
+	height: 250px;
+}
