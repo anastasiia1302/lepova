@@ -64,8 +64,7 @@ include("config.php");
 <label>Имя и Фамилия</label>
 <input type="text" name="name">
 </div>
-<input type="submit" name="registration"
-value="Регистрация">
+<input type="submit" name="registration" value="Регистрация">
 </form>
 </div>
 </body>
