@@ -1,14 +1,23 @@
 <?php
 include 'config.php';
 
-// var_dump($_POST["title"]);
-
 $title = trim($_POST["title"]);
-$text = mysqli_real_escape_string($connection, $_POST["editor1"]);
+$body = mysqli_real_escape_string($connection, $_POST["editor1"]);
 $date = date("d M, Y H:i:s");
 
-$query="INSERT INTO editor(title,text,date) VALUES ('".$title."','".$text."','".$date."')";
+$query="INSERT INTO editor(title,body,date) 
+VALUES('".$title."','".$body."','".$date."')";
 $output=mysqli_query($connection, $query);
 
-echo "статья".$title."успешно добавлена.";
+echo "статья " .$title." успешно добавленна.";
+
 ?>
+
+
+
+
+
+
+<button>
+<a href="view2.php">посмотреть</a>
+</button>
